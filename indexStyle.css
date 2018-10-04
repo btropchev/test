@@ -1,0 +1,191 @@
+
+body {
+    background: url("images/background-img1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.sidenav{
+    opacity: 0.35;
+}
+
+article{
+    width: 50%;
+}
+
+#firstSection {
+    display:flex;
+}
+
+#secondArticle {
+    text-align: center;
+    margin-top:150px;
+    padding-left:100px;
+}
+
+h1 {
+    font-size: 100px;
+    opacity: 0.8;
+    color:rgb(255, 136, 136);
+    font-family: 'Amatic SC',sans-serif;
+    font-weight: 100;
+
+}
+
+h2 {
+    width: 70%;
+    margin:auto;
+    opacity: 0.8;
+    color:white;
+    font-size: 35px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: 'Nanum Brush Script',sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+ul{
+    padding-left:0;
+}
+nav li a {
+    text-decoration: none;
+    color:rgb(247, 184, 184);
+    font-size: 25px;
+    font-family: 'Nanum Brush Script',sans-serif;
+    font-weight: bold;
+
+}
+
+nav li {
+    display:inline-block;
+}
+
+.hrefs:hover{
+    text-shadow: 1px 1px 2px #427388;
+    color:rgb(255, 136, 136);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#firstSideImg {
+    width: 35%;
+}
+
+button {
+    background:transparent;
+    color:rgb(247, 184, 184);
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Nanum Brush Script',sans-serif;
+    font-weight: 600;
+    border: 2px solid white;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+  
+button:hover {
+    border: 1px solid white;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    text-shadow: 1px 1px 2px #427388; 
+  }
+
+iframe {
+      display:none;
+      margin:0;
+}
+
+.closeVideo {
+      margin: -5px 0 0;
+      display:none;
+}
+  
+#firstArticle {
+      text-align: center;
+}
+
+i {
+      color:rgb(255, 136, 136);
+      font-size: 22px;
+      padding: 50px 5px 0 5px;
+      cursor: pointer;
+}
+
+i:hover {
+      color:white;
+}
+
+.socials {
+        text-decoration: none;
+}
+
+@media screen and (max-width: 479px) {
+
+    body {
+
+        background: url("images/background-img1.jpg") no-repeat center;
+        background-size: cover;
+
+    }
+    #secondArticle {
+        all: initial;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 140px;
+
+        text-shadow: 2px 2px 2px black;
+        margin:0 10px 0 0;
+        opacity: 1;
+    }
+
+    h2{
+        padding:0;
+        font-size: 40px;
+
+        margin:0;
+        width: 100%;
+
+    }
+
+    #firstSection {
+        width: 100%;
+        margin-top: 130px;
+    }
+
+    #firstArticle {
+        width: 0;
+    }
+
+    ul {
+        margin:0;
+    }
+
+    .hrefs {
+        font-size: 30px;
+
+    }
+
+    i{
+       font-size: 30px;
+    }
+
+    .showreel{
+        font-size: 28px;
+    }
+
+    #sideNavFirstArticle {
+        width: 100%;
+        margin:0;
+    }
+
+    #sideNavFirstArticle a {
+        font-size:40px;
+    }
+
+}
+
+
