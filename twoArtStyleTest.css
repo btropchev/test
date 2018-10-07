@@ -1,0 +1,43 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #151515;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    display: inline-block;
+    position: center;
+    background: no-repeat fixed center;
+    background-size: cover;
+    min-height: 100%;
+    width:45%;
+    border:2px solid white;
+    box-shadow: 1px 1px 1px black, 0 0 10px whitesmoke;
+    margin:15px;
+
+
+}
+.bgimg-1 {
+    margin-top: 100px;
+    background-image: url("images/2dFirst.jpg");
+}
+
+.bgimg-2 {
+    background-image: url("images/2dSecond.jpg");
+}
+
+.bgimg-3 {
+    background-image: url("images/2dThird.jpg");
+}
+.bgimg-4 {
+     background-image: url("images/2dForth.jpg");
+ }
+
+
+
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}

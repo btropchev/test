@@ -1,42 +1,90 @@
-body, html {
-    height: 100%;
+body {
+    background-image: url("images/repeatPattern.png");
+    background-repeat: initial;
+    background-size: initial;
+    margin:0;
+}
+.bar1, .bar2, .bar3 {
+    box-shadow: 1px 1px 1px black;
+}
+
+.sidenav {
+    margin:0;
+}
+.rowFirst,.rowSecond {
+    margin:auto;
+    text-align: center;
+    width: 80%;
+    transition: all 1.5s;
+}
+
+.rowSecond {
+    opacity: 0.3;
+}
+
+.smallImgContainer {
+    display: inline-block;
+    width: 15%;
+}
+.imgContainer{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.column {
+    width: 100%;
+    padding: 0 0 10px 0;
     margin: 0;
-    background-color: #151515;
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    display:block;
-    position: relative;
-    background: no-repeat fixed center;
-    background-size: cover;
-    min-height: 90%;
-    border:2px solid white;
-    box-shadow: 1px 1px 1px black, 0 0 10px whitesmoke;
-    margin:15px;
-
 
 }
-.bgimg-1 {
-    margin-top: 100px;
-    background-image: url("images/2dFirst.jpg");
+
+.column img {
+    opacity: 0.6;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+    border-radius: 7px;
 }
 
-.bgimg-2 {
-    background-image: url("images/2dSecond.jpg");
+.column img:hover {
+    opacity: 1;
 }
 
-.bgimg-3 {
-    background-image: url("images/2dThird.jpg");
+/* Clear floats after the columns */
+
+#expandedImg {
+    width:92%;
+    border-radius:10px;
+    margin: 0;
+
 }
-.bgimg-4 {
-     background-image: url("images/2dForth.jpg");
- }
 
+.descriptionFirst{
+    color:black;
+    margin:0;
+    background-color: rgb(255, 136, 136);
+    opacity: 0.9;
+    transition: all 1.5s;
+}
 
+.descriptionSecond{
+    color:black;
+    margin:0;
+    background-color: rgb(255, 136, 136)    ;
+    opacity: 0.3;
+    transition: all 1s;
 
+}
 
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
+.firstDescription, .titles {
+    margin:0 auto;
+    width: 55%;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', sans-serif;
+    padding: 5px;
+}
+
+.titles {
+    font-weight: bold;
 }

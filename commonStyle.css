@@ -10,6 +10,11 @@ html {
     margin: 0;
 }
 
+body {
+    background: url("images/background-img1.jpg") no-repeat center;
+    background-size: cover;
+}
+
 .container {
     display: inline-block;
     cursor: pointer;
@@ -87,12 +92,11 @@ hr {
 
 #sideNavSecondArticle img {
     width: 70%;
-    display:none;
+    display: none;
 }
 
 #firstImageSide {
     margin-top: 130px;
-    opacity: 1;
 }
 
 #secondImageSide {
@@ -106,3 +110,4 @@ hr {
 #forthImageSide {
     margin-top: 430px;
 }
+

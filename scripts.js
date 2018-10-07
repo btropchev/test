@@ -9,23 +9,25 @@
         });
     });
 
-    $(function(){
-        $(".sidenav").mouseleave(function(){
-            $("#mySidenav").css("width","0");
-            $(".container").css("display", "inline-block");
-            $("#secondArticle").css("display","inline-block");
-        });
-    });
+     $(function(){
+          $(".sidenav").mouseleave(function(){
+              $("#mySidenav").css("width","0");
+              $(".container").css("display", "inline-block");
+              $("#secondArticle").css("display","inline-block");
+          });
+      });
 
 
-    $(function (){
-        $("#twoArt").mouseover(function () {
-            $("#firstImageSide").css("display", "inline-block");
-        })
-            .mouseleave(function () {
-                $("#firstImageSide").css("display", "none");
-            });
-    });
+      $(function (){
+          $("#twoArt").mouseover(function () {
+              $("#firstImageSide").css("display", "inline-block");
+          })
+              .mouseleave(function () {
+                  $("#firstImageSide").css("display", "none");
+              });
+      });
+
+
 
     $(function (){
         $("#threeArt").mouseover(function () {
@@ -79,5 +81,46 @@
             $(".closeVideo").css("display", "none");
         });
     });
+
+    $(document).ready(function(){
+        $(".allImages").click(function(){
+
+            let imgSrc = $(this).attr("src");
+
+            $("#expandedImg").attr("src", imgSrc);
+        });
+    });
+
+    $(document).ready(function(){
+        let maxImageSize = $("#expandedImg").height();
+        $(".imgContainer").css("height", maxImageSize);
+    });
+
+    // make row1 js functional!
+
+    $(function() {
+        let rowFirst = $(".rowFirst");
+        let descriptionFirst = $(".descriptionFirst");
+
+        let rowSecond = $(".rowSecond");
+        let descriptionSecond = $(".descriptionSecond")
+
+        $(window).scroll(function() {
+            let scroll = $(window).scrollTop();
+
+            if (scroll >= 500) {
+                rowFirst.css("opacity","0.3");
+                descriptionFirst.css("opacity","0.3");
+                rowSecond.css("opacity","0.9");
+                descriptionSecond.css("opacity","0.9");
+            } else {
+                rowFirst.css("opacity","0.9");
+                descriptionFirst.css("opacity","0.9");
+                rowSecond.css("opacity","0.3");
+                descriptionSecond.css("opacity","0.3");
+            }
+        });
+    });
+
 
 
